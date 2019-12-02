@@ -1,0 +1,181 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.headSec {
+    height: 100%;
+    background: url("/assets/title.png");
+    background-size:75% 400%;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: gray;
+    width: 100%;
+    margin-bottom:30px;
+    overflow: none;
+    
+}
+
+.headSec h2 {
+    color: gray;
+    font-size: 30px;
+    padding-left: 15px;
+    margin-left: 10px;
+    left: 10px;
+    
+}
+
+ul { 
+    list-style-type: none;
+    margin: 70px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: black;    
+    
+}
+
+li {float:left;}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+
+.mainCont { 
+    
+    margin: auto;
+    width:80%;
+    border: 3px solid black;
+    border-width: thick 200px;
+    padding: 10px;
+    text-align: center;
+}
+
+.about {
+    padding: 20px;
+    
+    
+    
+}
+
+
+.foot {
+    min-height: 10px;
+    background-color: gray;
+    width: 100%;
+    margin-top: 50px;
+    overflow: auto;
+    text-align: right;
+    padding-right: 10px;
+    
+    
+}
+
+
+
+#itemsContainer {
+    width: 100%;
+    text-align: center;
+    
+    
+}
+
+
+#itemsContainer {
+   display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 3px solid black;
+    border-width: thick 30px;
+    
+    
+}
+
+
+#reviewsContainer {
+   display: block;
+    color: black;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    left: 30px;
+    
+    
+}
+
+
+.itemhols {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 22%;
+    padding:10px;
+    min-height: 300px;
+   
+}
+
+
+.itemhols h1 {
+   display: block;
+    color: #4CAF50;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px
+    
+}
+
+
+.itemhols p {
+   display: block;
+    color: #4CAF50;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px
+    
+}
+
+
+
+.itemholsIm {
+    width: 30%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block;
+    
+}
+
+
+.button {
+    background-color: black;
+    border: none;
+    
+    color: red;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

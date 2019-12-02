@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+ <div id="itemsContainer">
+   <h1><%= @game.title %></h1>
+  
+   <%= video_tag @game.trailer, :class => 'welcomIm', :size => "640x480", :autoplay => true, :loop => true %>
+       <h2>Review:</h2><p><%= @game.description %></p>
+   
+	            <h2>Rating:</h2><h1><%= @game.rating %></h1>
+	          
+
+	            
+	            
+	            
+	            <br>
+           <br>
+           </div>
+           <div id="reviewsContainer">
+             
+     <%= link_to "Write a comment?", new_game_review_path(@game) %>
+     <hr>
+       
+        <% if @reviews.blank? %>
+	          <h3>No comments just yet, would you like to add the first!</h3>
+	          <%= link_to "Write Comment", new_game_review_path(@game) %>
+	        <% else %>
+	          <% @reviews.each do |review| %>
+	            <div class="reviews">
+	              <h2>Review rating:</h2><b><%= review.rating %></b>
+	              <h3>Comment:</h3><p><%= review.comment %></p>
+	              <p><%= review.created_at %></p>
+	              
+	              <hr>
+       
+     </div>
+     <% end %>
+	        <% end %>
+         <br>
+            <p>
+         <%= link_to 'Back',  games_path, :class => "button", :role => "button" %>
+         <%= link_to 'Edit',  edit_game_path(@game), :class => "button", :role => "button" %>
+         
+       </p>
+        
+     
+    </div>
+       
